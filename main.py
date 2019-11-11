@@ -34,8 +34,6 @@ def propagate(B, b, X, Y):
     return grads, cost
 
 
-# %%
-
 def optimize(B, b, X, Y, num_iterations, learning_rate):
     """
     params:
