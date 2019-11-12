@@ -2,14 +2,14 @@ import numpy as np
 def propagate(B, b, X, Y):
     """
     params:
-    B: weights of size [1, X.shape[0]]
+    B: weights of size [1, X.shape[1]]
     b: bias
     X: matrix of observations and features size [X.shape[0], X.shape[1]]
     Y: matrix of actual observation size [Y.shape[0], 1]
 
     returns:
     grads: dict of gradients, dB of shape same as B and db of shape [1, 1].
-    cost: MSE cost of shape [m, 1]
+    cost: MSE cost
     """
 
     ## m is no of observations ie rows of X
@@ -37,14 +37,14 @@ def propagate(B, b, X, Y):
 def optimize(B, b, X, Y, num_iterations, learning_rate):
     """
     params:
-    B: weights of size [1, X.shape[0]]
+    B: weights of size [1, X.shape[1]]
     b: bias
     X: matrix of observations and features size [X.shape[0], X.shape[1]]
     Y: matrix of actual observation size [Y.shape[0], 1]
     num_iterations: number of iterations
     learning_rate: learning rate
     returns:
-    params: parameters B of shape [1, X.shape[0]] and bias
+    params: parameters B of shape [1, X.shape[1]] and bias
     grads: dict of gradients, dB of shape same as B and db
     costs:  MSE cost
     """
