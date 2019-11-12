@@ -103,7 +103,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations=2000, learning_rate=0
     # Gradient descent
     parameters, grads, costs = optimize(B, b, X_train, Y_train, num_iterations, learning_rate)
 
-    # Retrieve parameters w and b from dictionary "parameters"
+    # Retrieve parameters B and b from dictionary "parameters"
     B = parameters["B"]
     b = parameters["b"]
 
